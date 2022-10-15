@@ -28,6 +28,14 @@
 			margin-left:-150px;
 			width: 350px !important;
 		}
+		.loading {
+			position: absolute;
+			bottom: 120px;
+			right:25%;
+			left:50%;
+			margin-left:-180px;
+			width: 60px !important;
+		}
 	</style>
 
 	<link href="app.css" rel="stylesheet">
@@ -38,7 +46,10 @@
 	<main class="d-flex w-100">
 		<div class="container d-flex flex-column">
 			<div class="d-flex justify-content-center">
-				<a href="halaman-2.html" class="btn btn-primary btn-tamu">Masuk dan Isi Buku Tamu</a>
+				<div class="d-flex justify-content-start">
+					<a href="halaman-2.html" class="btn btn-primary btn-tamu">Masuk dan Isi Buku Tamu</a>
+					<img src="loading-2.gif" alt="" class="loading">
+				</div>				
 			</div>
 		</div>
 	</main>
