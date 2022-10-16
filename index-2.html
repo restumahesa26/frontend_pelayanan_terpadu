@@ -17,7 +17,7 @@
 	<title>Sign In | AdminKit Demo</title>
 	<style>
 		body {
-			background-image: url('bg-polos.jpg');
+			background-image: url('bg-1.jpg');
 			background-size: cover;
 		}
 		.btn-tamu {
@@ -36,6 +36,10 @@
 			margin-left:-180px;
 			width: 60px !important;
 		}
+		.text-layanan {
+			position: absolute;
+			bottom: 30px;
+		}
 	</style>
 
 	<link href="app.css" rel="stylesheet">
@@ -45,14 +49,20 @@
 <body>
 	<main class="d-flex w-100">
 		<div class="container d-flex flex-column">
-
+			<div class="d-flex justify-content-center">
+				<div class="d-flex justify-content-start">
+					<a href="halaman-2.html" class="btn btn-primary btn-tamu">Masuk dan Isi Buku Tamu</a>
+					<img src="loading-2.gif" alt="" class="loading">
+				</div>
+				<div class="text-center text-layanan">
+					<h5 style="font-size: 16px; color: #fff;">Jam Layanan</h5>
+					<h5 style="font-size: 16px; color: #fff;">Senin s.d Kamis Pukul 08.00-16.30 Jumat: Pukul 08.00-17.00 WIB</h5>
+					<h5 style="font-size: 16px; color: #fff;">Istirahat : Senin s.d Kamis Pukul 12.30-13.30 Jumat: Pukul 12.30-14.00 WIB</h5>
+				</div>				
+			</div>
 		</div>
 	</main>
+	<audio src="halaman-depan.wav" type="audio/wav" autoplay hidden loop></audio>
 	<script src="app.js"></script>
 </body>
-<script>
-	setTimeout(function () {
-    window.location.href = "index-2.html"; //will redirect to your blog page (an ex: blog.html)
-  }, 2000);
-</script>
 </html>
