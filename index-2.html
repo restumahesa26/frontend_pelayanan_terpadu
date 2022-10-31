@@ -7,35 +7,48 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="Responsive Admin &amp; Dashboard Template based on Bootstrap 5">
 	<meta name="author" content="AdminKit">
-	<meta name="keywords" content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
+	<meta name="keywords"
+		content="adminkit, bootstrap, bootstrap 5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link rel="shortcut icon" href="img/icons/icon-48x48.png" />
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-in.html" />
 
-	<title>Sign In | AdminKit Demo</title>
+	<title>E-PTSP</title>
 	<style>
 		body {
-			background-image: url('bg-1.jpg');
+			background-image: url('bg-halaman-depan.jpg');
+			height: 100% !important;
+			background-position: center;
+			background-repeat: no-repeat;
 			background-size: cover;
 		}
+
 		.btn-tamu {
 			position: absolute;
 			bottom: 130px;
-			right:25%;
-			left:50%;
-			margin-left:-150px;
+			right: 25%;
+			left: 50%;
+			margin-left: -150px;
 			width: 350px !important;
 		}
+
+		.bottom {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+		}
+
 		.loading {
 			position: absolute;
 			bottom: 120px;
-			right:25%;
-			left:50%;
-			margin-left:-180px;
+			right: 25%;
+			left: 50%;
+			margin-left: -180px;
 			width: 60px !important;
 		}
+
 		.text-layanan {
 			position: absolute;
 			bottom: 30px;
@@ -49,20 +62,24 @@
 <body>
 	<main class="d-flex w-100">
 		<div class="container d-flex flex-column">
-			<div class="d-flex justify-content-center">
-				<div class="d-flex justify-content-start">
-					<a href="halaman-2.html" class="btn btn-primary btn-tamu">Masuk dan Isi Buku Tamu</a>
-					<img src="loading-2.gif" alt="" class="loading">
+			<div class="bottom">
+				<div class="d-flex justify-content-end">
+					<a href="halaman-2.html" target="_blank">
+						<img src="btn-tamu.png" alt="" srcset="" width="450">
+					</a>
 				</div>
-				<div class="text-center text-layanan">
-					<h5 style="font-size: 16px; color: #fff;">Jam Layanan</h5>
-					<h5 style="font-size: 16px; color: #fff;">Senin s.d Kamis Pukul 08.00-16.30 Jumat: Pukul 08.00-17.00 WIB</h5>
-					<h5 style="font-size: 16px; color: #fff;">Istirahat : Senin s.d Kamis Pukul 12.30-13.30 Jumat: Pukul 12.30-14.00 WIB</h5>
-				</div>				
+				<div class="d-flex justify-content-end" style="margin-top: -30px">
+					<a href="halaman-tentang.html">
+						<img src="btn-tentang.png" alt="" srcset="" width="350">
+					</a>
+				</div>
 			</div>
 		</div>
 	</main>
 	<audio src="halaman-1.wav" type="audio/wav" autoplay hidden loop></audio>
 	<script src="app.js"></script>
 </body>
+<script type="text/javascript">
+</script>
+
 </html>
