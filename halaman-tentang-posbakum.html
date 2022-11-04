@@ -14,32 +14,44 @@
 
 	<link rel="canonical" href="https://demo-basic.adminkit.io/pages-sign-in.html" />
 
-	<title>E-PTSP | E-Posbakum</title>
+	<title>E-PTSP</title>
 	<style>
 		body {
-			background-image: url('bg-pelayanan-offline.jpg');
-			background-size: cover;
+			background-image: url('bg-tentang-2.jpg');
+            height: 100% !important;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
 		}
-		h1 {
-			font-size: 40px !important;
-			color: #fff !important;
-		}
-		.jenis-layanan {
+		.btn-tamu {
 			position: absolute;
-			right: 0;
-			margin-right: 120px;
-			margin-top: 10px;
+			bottom: 130px;
+			right:25%;
+			left:50%;
+			margin-left:-150px;
+			width: 350px !important;
 		}
-        .top {
+        .bottom {
             position: absolute;
-            top: 5px;
-            right: 30px;
+            top: 50%;
         }
-        .content {
+        .to-bottom {
             position: absolute;
             bottom: 0;
-            left: 17%;
+            left: 30px;
         }
+		.loading {
+			position: absolute;
+			bottom: 120px;
+			right:25%;
+			left:50%;
+			margin-left:-180px;
+			width: 60px !important;
+		}
+		.text-layanan {
+			position: absolute;
+			bottom: 30px;
+		}
 	</style>
 
 	<link href="app.css" rel="stylesheet">
@@ -49,22 +61,19 @@
 <body>
 	<main class="d-flex w-100">
 		<div class="container d-flex flex-column">
-            <div class="content">
-                <div class="d-flex justify-content-start align-items-center">
-                    <h3 style="color: #fff; font-size: 24px;">Klik untuk <br> Lihat brosur</h3>
-                    <a href="#">
-                        <img src="btn-syarat.png" alt="" width="70">
-                    </a>
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4"></div>
+                <div class="col-4">
+                    <div class="to-bottom">
+                        <a href="halaman-e-posbakum.html">
+                            <img src="btn-kembali-3.png" alt="" width="90">
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="top">
-                <a href="halaman-posbakum-2.html">
-                    <img src="btn-kembali-3.png" alt="" width="80">
-                </a>
             </div>
 		</div>
 	</main>
 	<script src="app.js"></script>
 </body>
-
 </html>
